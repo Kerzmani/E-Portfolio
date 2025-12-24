@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+
+/* GLOBAL Styles */
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -14,6 +16,10 @@ h1, h2, h3, h4, h5, h6, span{
    line-height: 1.25;  
 }
 
+h1 {
+    font-size: 36px;
+}
+
 p {
     line-height: 1.5;
     font-size: 16px;
@@ -22,6 +28,36 @@ p {
 li{
     list-style: none;
 }
+
+.text--red{
+    color: #F32B35;
+}
+
+.flex{
+    display:flex;
+}
+
+.flex-1{
+    flex: 1;
+
+}
+
+.row {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+.container {
+    padding: 50px 0;
+}
+
+section:nth-child(even) {
+    background-color: #f8f8f8f8
+}
+
+
 
 /* Navigation Bar Styles */
 
@@ -66,4 +102,112 @@ nav {
     font-weight: bold;
 }
 
-/*
+.section__title{
+    margin-bottom: 20x;
+}
+
+/*  ABOUT ME  Styles  */
+
+#about-me {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me__info--container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-me__picture--mask {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0,0,0,.5);
+
+}
+
+.about-me__picture {
+    width: 100%;
+    padding-top: 1px;
+    object-fit: cover;
+
+}
+
+.about-me__info--title {
+    margin-bottom: 16px;
+}
+
+.about-me__info--para {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 28px;
+    max-width: 550px;
+
+}
+
+/*ABOUT ME LINKS*/
+.about-me__link {
+    font-size: 30px;
+    color: #F32B35;
+    text-decoration: none;
+    padding: 0 16px;
+}
+
+/* ABOUT ME IMAGE CONTAINER */
+
+.about-me__img--container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+/* ABOUT ME IMAGE */
+.about-me__img{
+    width: 100%;
+}
+
+/* Tech Stack SECTION */
+
+.language {
+    width: 25%
+   
+}
+.language__img {
+    width: 100%;
+    max-width: 100px;
+}
+
+.language__img--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.language__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+
+
+
+
+
+
+
+
+
