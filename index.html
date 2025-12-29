@@ -16,25 +16,25 @@
     <section id="about-me">
       <nav>
         <div class="personal__logo">
-          Austin Kerzman<i class="fa-solid fa-hand-point-left"></i>
+          Austin Kerzman<i class="fa-solid fa-hand-point-left title-point"></i>
         </div>
         <!-- NAV LINKS -->
         <ul class="nav__link--list">
-          <li>
+          <li class="nav__link">
             <a
-              href=""
+              href="#languages"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Languages</a
             >
           </li>
-          <li>
+          <li class="nav__link">
             <a
-              href=""
+              href="#projects"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Projects</a
             >
           </li>
-          <li>
+          <li class="nav__link">
             <a href="" class="nav__link--anchor nav__link--anchor-primary"
               >Contact</a
             >
@@ -57,9 +57,14 @@
             </figure>
             <!-- MAIN CONTENT H1 -->
             <h1 class="about-me__info--title">
-              <i class="fa-regular fa-hand-point-right text--red"></i>Hey! I'm
+              <i
+                class="fa-regular fa-hand-point-right text--red point-left"
+              ></i>
+              &nbsp;Hey! I'm
               <span class="text--red"
-                >Austin Kerzman<i class="fa-regular fa-hand-point-left"></i
+                >Austin Kerzman &nbsp;<i
+                  class="fa-regular fa-hand-point-left point-right"
+                ></i
               ></span>
             </h1>
             <!-- MAIN CONTENT INTRO PARAGRAPH -->
@@ -72,14 +77,34 @@
             </p>
             <!-- MAIN CONTENT SOCIAL LINKS -->
             <div class="about-me__links">
-              <a href="" class="about-me__link">
-                <i class="fa-brands fa-github"></i>
+              <a
+                href="https://github.com/Kerzmani"
+                target="_blank"
+                class="about-me__link"
+              >
+                <i class="fa-brands fa-github link--img"></i>
               </a>
-              <a href="" class="about-me__link">
-                <i class="fa-solid fa-envelope"></i>
+              <a
+                href="mailto: KerzmanDeveloping@gmail.com"
+                target="_blank"
+                class="about-me__link"
+              >
+                <i class="fa-solid fa-envelope link--img"></i>
               </a>
-              <a href="" class="about-me__link">
-                <i class="fa-brands fa-discord"></i>
+              <a
+                href="https://discordapp.com/users/181540650074767360"
+                target="_blank"
+                class="about-me__link"
+              >
+                <i class="fa-brands fa-discord link--img"></i>
+              </a>
+              <!--ADD LINK TO RESUME-->
+              <a
+                href="/assets/MYRESUMEHERE.pdf"
+                target="_blank"
+                class="about-me__link"
+              >
+                <i class="fa-solid fa-file link--img"></i>
               </a>
             </div>
           </div>
@@ -139,7 +164,7 @@
           <h1 class="section__title">
             Check out some of my <span class="text--red">projects</span>
           </h1>
-          <ul class="project_list">
+          <ul class="project__list">
             <li class="project">
               <div class="project__wrapper">
                 <!-- ADD PROJECT/WEBSITE IMAGE -->
@@ -162,12 +187,12 @@
 
                   <div class="project__description--links">
                     <a
-                      href="www.github.com/mylink"
+                      href="https://github.com/Kerzmani"
                       target="_blank"
                       alt="Github Link"
                       class="project__description--link"
                     >
-                      <i class="fa-brands fa-github"></i>
+                      <i class="fa-brands fa-github link--img"></i>
                     </a>
                     <a
                       href="www.mywebsite.com/mylink"
@@ -175,7 +200,9 @@
                       alt="WebsiteLink"
                       class="project__description--link"
                     >
-                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      <i
+                        class="fa-solid fa-arrow-up-right-from-square link--img"
+                      ></i>
                     </a>
                   </div>
                 </div>
@@ -203,12 +230,12 @@
 
                   <div class="project__description--links">
                     <a
-                      href="www.github.com/mylink"
+                      href="https://github.com/Kerzmani"
                       target="_blank"
                       alt="Github Link"
                       class="project__description--link"
                     >
-                      <i class="fa-brands fa-github"></i>
+                      <i class="fa-brands fa-github link--img"></i>
                     </a>
                     <a
                       href="www.mywebsite.com/mylink"
@@ -216,7 +243,9 @@
                       alt="WebsiteLink"
                       class="project__description--link"
                     >
-                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      <i
+                        class="fa-solid fa-arrow-up-right-from-square link--img"
+                      ></i>
                     </a>
                   </div>
                 </div>
@@ -243,20 +272,23 @@
 
                   <div class="project__description--links">
                     <a
-                      href="www.github.com/mylink"
+                      href="https://github.com/Kerzmani"
                       target="_blank"
                       alt="Github Link"
                       class="project__description--link"
                     >
-                      <i class="fa-brands fa-github"></i>
+                      <i class="fa-brands fa-github link--img"></i>
                     </a>
                     <a
                       href="www.mywebsite.com/mylink"
                       target="_blank"
                       alt="WebsiteLink"
-                      class="project__description--link"
+                      class="project__description--link link--img"
                     >
-                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      <i
+                        class="fa-solid fa-arrow-up-right-from-square link--img"
+                      >
+                      </i>
                     </a>
                   </div>
                 </div>
@@ -283,20 +315,20 @@
         <div class="footer__social--list">
           <a
             href="https://github.com/Kerzmani"
-            class="footer__social--link link__hover-effect link__hover-effect--white"
+            class="footer__social--link link__hover-effect link__hover-effect--white link--img"
             target="_blank"
             >Github
           </a>
           <!-- ADD LINK TO RESUME -->
           <a
-            href=""
-            class="footer__social--link link__hover-effect link__hover-effect--white"
+            href="assets/MYRESUMEHERE.pdf"
+            class="footer__social--link link__hover-effect link__hover-effect--white link--img"
             target="_blank"
             >Resume
           </a>
           <a
             href="mailto:KerzmanDeveloping@gmail.com"
-            class="footer__social--link link__hover-effect link__hover-effect--white"
+            class="footer__social--link link__hover-effect link__hover-effect--white link--img"
             target="_blank"
             >Email
           </a>
