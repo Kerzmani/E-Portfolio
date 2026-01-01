@@ -168,17 +168,6 @@ nav {
   animation: animate-title-point 1.3s ease-in 300ms forwards;
 }
 
-@keyframes animate-title-point {
-  0% {
-    opacity: 0;
-    transform: translateX(0%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(-1200%);
-  }
-}
-
 .section__title {
   margin-bottom: 20x;
 }
@@ -626,23 +615,6 @@ footer {
     font-size: 26px;
   }
 
-  .title-point {
-    font-size: 20px;
-    right: 340px;
-    top: 40px;
-  }
-
-  @keyframes animate-title-point {
-    0% {
-      opacity: 0;
-      transform: translateX(0%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(-600%);
-    }
-  }
-
   .about-me__info--para {
     font-size: 16px;
   }
@@ -673,23 +645,6 @@ footer {
   nav {
     padding: 20px 10px;
     margin-right: 10px;
-  }
-
-  .title-point {
-    font-size: 24px;
-    right: 120px;
-    top: 50px;
-  }
-
-  @keyframes animate-title-point {
-    0% {
-      opacity: 0;
-      transform: translateX(0%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(-300%);
-    }
   }
 
   .nav__link:not(:last-child) {
