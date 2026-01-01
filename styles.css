@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 /* GLOBAL Styles */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Lato", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: white;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 html {
@@ -25,7 +31,8 @@ html {
   height: 3px;
   bottom: -4px;
   right: 0;
-  background-color: black;
+  color: #f32b35;
+  background-color: #f32b35;
   transition: width 0.3s ease;
 }
 
@@ -93,7 +100,7 @@ i {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 12px;
+  padding: 0;
 }
 
 .row {
@@ -175,9 +182,11 @@ nav {
 /*  ABOUT ME  Styles  */
 
 #about-me {
-  min-height: 100vh;
+  min-height: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .about-me__info {
@@ -231,10 +240,20 @@ nav {
 
 .point-left {
   animation: animate-point-left 2s ease-in-out 1.6s;
+  cursor: default;
+  opacity: 1;
 }
 
 .point-right {
   animation: animate-point-right 2s ease-in-out 1.6s;
+  cursor: default;
+  opacity: 1;
+}
+
+.point-left:hover,
+.point-right:hover {
+  opacity: 1;
+  cursor: default;
 }
 
 @keyframes animate-point-left {
@@ -447,7 +466,7 @@ nav {
 /* PROJECTS SECTION */
 
 .project {
-  margin-bottom: 130px;
+  margin: 0 auto 130px auto;
   position: relative;
   cursor: pointer;
   width: 100%;
@@ -468,6 +487,7 @@ nav {
   border-radius: 20px;
   overflow: hidden;
   position: relative;
+  margin: 0 auto;
 }
 
 .project__wrapper:before {
@@ -609,18 +629,23 @@ footer {
     max-width: 90%;
     height: 68px;
     padding: 12px 12px;
-  }
-
-  h1 {
-    font-size: 26px;
+    justify-content: center;
   }
 
   .about-me__info--para {
     font-size: 16px;
   }
 
+  h1 {
+    font-size: 26px;
+  }
+
   .language {
     width: calc(100% / 3);
+  }
+
+  .project {
+    margin-bottom: 80px auto;
   }
 
   .project__description--para {
@@ -639,16 +664,34 @@ footer {
   .project__wrapper {
     max-width: 90%;
   }
+
+  #about-me {
+    align-items: center;
+  }
+
+  .about-me__img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .about-me .about-me__info--container,
+  .about-me__img--container {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 480px) {
   nav {
     padding: 20px 10px;
-    margin-right: 10px;
+    margin-right: 0;
+    justify-content: center;
   }
 
   .nav__link:not(:last-child) {
     display: none;
+  }
+
+  .about-me__info--para {
+    padding: 0 10px;
   }
 
   .project__description {
@@ -675,6 +718,21 @@ footer {
   .project__description--sub-title {
     text-align: center;
     margin: 12px 0;
+  }
+
+  .project {
+    margin-bottom: 40px;
+  }
+  .language {
+    width: 40%;
+
+
+  .container,
+  .row {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /* END OF STYLES */
