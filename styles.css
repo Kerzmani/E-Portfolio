@@ -417,6 +417,10 @@ nav {
   position: relative;
 }
 
+.language-section__title {
+  padding-top: 16px;
+}
+
 .language__img {
   width: 100%;
   max-width: 100px;
@@ -466,7 +470,7 @@ nav {
 /* PROJECTS SECTION */
 
 .project {
-  margin: 0 auto 130px auto;
+  margin: 0 auto 80px auto;
   position: relative;
   cursor: pointer;
   width: 100%;
@@ -474,7 +478,7 @@ nav {
 }
 
 .project:last-child {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 .project__img {
@@ -724,7 +728,7 @@ footer {
     margin-bottom: 40px;
   }
   .language {
-    width: 40%;
+    width: 35%;
 
 
   .container,
