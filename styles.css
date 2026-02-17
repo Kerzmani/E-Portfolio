@@ -3,6 +3,7 @@
 /* GLOBAL Styles */
 * {
   box-sizing: border-box;
+  font-family: Roboto, sans-serif;
 }
 
 body {
@@ -11,9 +12,11 @@ body {
   padding: 0;
   box-sizing: border-box;
 
-  /* https://grabient.com/IwOgLAbArANAzOA7ImBaUAGKLRynecDMGAJhAwA5YKBOFOiGO257StjJkSyjIA?style=linearSwatches&angle=45 */
 
-  background: linear-gradient(45deg, #451376 0.000%, #451376 20.000%, #6122aa calc(20.000% + 1px), #6122aa 40.000%, #8444d3 calc(40.000% + 1px), #8444d3 60.000%, #ac79f0 calc(60.000% + 1px), #ac79f0 80.000%, #d9bfff calc(80.000% + 1px) 100.000%);
+  background: linear-gradient(45deg, #2d0e58 0.000%, #2d0e58 20.000%, #47168f calc(20.000% + 1px), #47168f 40.000%, #6629b7 calc(40.000% + 1px), #6629b7 60.000%, #8a5fd8 calc(60.000% + 1px), #8a5fd8 80.000%, #ba95e7 calc(80.000% + 1px) 100.000%);
+
+    /* FOR DARKER MODE */
+    /*background: linear-gradient(45deg, #0a0115 0.000%, #0a0115 20.000%, #150228 calc(20.000% + 1px), #150228 40.000%, #1f0333 calc(40.000% + 1px), #1f0333 60.000%, #2d0d52 calc(60.000% + 1px), #2d0d52 80.000%, #400066 calc(80.000% + 1px) 100.000%);*/
   
 
   
@@ -85,13 +88,20 @@ li {
   list-style: none;
 }
 i {
-  color: #47237e;
+  color: #3d1a70;
   cursor: pointer;
   display: inline-block;
+  /* FOR DARK MODE
+  color:#8444d3;
+   */
+
 }
 
 .text--red {
-  color: #47237e
+  color: #3d1a70
+  /* FOR DARK MODE
+  color:#8444d3;
+   */  
 }
 
 .flex {
@@ -148,15 +158,21 @@ nav {
   display: flex;
 }
 
+.nav__link{
+  display: flex;
+  align-items: center;
+}
+
 .nav__link--anchor {
   font-size: 18px;
   margin: 0 12px;
   color: #5513BA;
   font-weight: 700;
+  align-items: center;
 }
 
 .nav__link--anchor-primary {
-  background-color: #5513BA;
+  background-color: #3d1a70;
   padding: 8px 20px;
   border-radius: 50px;
   color: #f9feee;
@@ -559,7 +575,7 @@ nav {
 
 .project__description--title {
   font-size: 40px;
-  color: #47237e;
+  color: #4a0f96;
 
 }
 
@@ -571,6 +587,7 @@ nav {
 .project__description--link {
   font-size: 20px;
   margin-right: 16px;
+  
 }
 
 
